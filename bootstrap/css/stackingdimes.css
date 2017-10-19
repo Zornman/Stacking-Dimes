@@ -1,0 +1,210 @@
+html, body {
+    overflow-x: hidden;
+}
+
+body {
+    background-color: #0F0F0F;
+    z-index: 0;
+    width: 100%;
+}
+
+ul {
+    list-style-type: none;
+    margin-top: 6%;
+    padding: 0;
+    overflow: hidden;
+    background-color: white;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: white;
+    font-size: 16px;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover {
+    background-color: #FFA200;
+    color: white;
+}
+
+.active {
+    background-color: #FFA200;
+}
+
+.col-sm-8 {
+    overflow: hidden;
+}
+
+.hoverText {
+  background-color: #000;
+  color: white;
+  font-size: 16px;
+  padding: 16px 32px;
+}
+
+.hover {
+  bottom: 0;left: 0; top: 0; right: 0;
+  text-align: center;
+  height: 150px;
+  width: 175px;
+  margin: auto;
+  position: absolute;
+  opacity: 0;
+}
+
+.col-sm-4:hover .hover {
+  opacity: 1;
+}
+
+.image {
+  opacity: 1;
+  display: block;
+  transition: .5s ease;
+  backface-visibility: hidden;
+}
+
+.image:hover {
+    opacity: 0.5;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+.mobileNav {
+    height: 100%; /* 100% Full-height */
+    width: 0; /* 0 width - change this with JavaScript */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Stay on top */
+    top: 0;
+    left: 0;
+    background-color: #111; /* Black*/
+    overflow-x: hidden; /* Disable horizontal scroll */
+    padding-top: 60px; /* Place content 60px from the top */
+    transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+}
+
+.mobileNav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+}
+
+.mobileNav a:hover, .offcanvas a:focus{
+    color: #f1f1f1;
+}
+
+.mobileNav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+.mobileShow {
+    display: none;
+}
+
+.full {
+    position: fixed;
+    z-index: 9998;
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 100%;
+    height: 100%;
+}
+
+.popup {
+    position: fixed;
+    background-color: white;
+    z-index: 9999;
+    width: 30%;
+    height: 35%;
+    align-self: center;
+    display: none;
+    margin-left: 33.3%;
+    margin-top: 12%;
+}
+
+.closeHeader {
+    width: 100%;
+    height: 20%;
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.carousel {
+    height: 750px;
+}
+
+.carousel-inner > .item > img {
+    top: 0;
+    left: 0;
+    min-width: 100%;
+    height: 750px;
+}
+
+form {
+    margin-left: 20%;
+}
+
+textarea {
+    width: 75%;
+}
+
+#mobileProduct {
+    display: none;
+}
+
+@media only screen and (max-width: 1200px) {
+    #headerElement {width: 100%;}
+    .popup {width: 50%; height: 30%; margin-left: 25%; margin-top: 15%;}
+    .navigation {display: none;}
+    .col-sm-8 {display: none;}
+    .col-sm-4 > img {height: 40%;}
+    .col-sm-4 > #products {height: 90%;}
+    .col-sm-4 > #productSticker {height: 55%;}
+    .mobileNav {padding-top: 15px;}
+    .mobileNav a {font-size: 18px;}
+    .mobileShow {display: block;}
+}
+
+@media only screen and (max-width: 767px) {
+    #footer {text-align: center;
+             align-items: center;}
+    .popup {margin-top: 30%; width: 80%; margin-left: 10%;}
+    .col-sm-4 > img {width: 50%;}
+    #stickerImg > img {width: 75%; height: 200px; display: block; margin: auto;}
+    #stickerImg > .hover {padding-top: 0%;}
+    #bottomRow {margin-top: -10%;}
+    .carousel {width: 100%; height: 400px;}
+    .carousel-inner > .item > img {height: 400px;}
+    form {margin-left: 5%;}
+    #pcProduct {display: none;}
+    #mobileProduct {display: block; width: 70%; margin: auto;}
+}
+
+@media only screen and (max-width: 500px)
+{
+    .col-sm-4 > #products {width: 80%;}
+    .col-sm-4 > img {width: 90%; height: 50%;}
+    #stickerImg {height: 150px;} 
+    #stickerImg > img {margin-top: 35%; margin-bottom: -15%; height: 50%; width: 90%;}
+    #stickerImg > .hover {padding-top: 0%;}
+    .carousel {width: 100%; height: 200px;}
+    .carousel-inner > .item > img {height: 200px;}
+    body {background-color: white;}
+    #pcProduct {display: none;}
+    .popup {width: 90%; margin-left: 5%; height: 25%;}
+    #mobileProduct {display: block; width: 100%;}
+}

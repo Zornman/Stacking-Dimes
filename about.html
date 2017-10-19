@@ -1,0 +1,101 @@
+<html lang="en-US">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="bootstrap/css/stackingdimes.css">
+    <script src="bootstrap/js/bootstrap.min.js"> </script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="https://cdn.snipcart.com/scripts/2.0/snipcart.js" id="snipcart" data-api-key="YmQ5MzU1MzYtYmEzMy00M2U4LTk3MGYtNWYxMGM0YzdlYmQzNjM2NDA1ODg3MDM2OTYyNTUx"></script>
+    <link href="https://cdn.snipcart.com/themes/2.0/base/snipcart.min.css" type="text/css" rel="stylesheet" />
+    <title>Stacking Dimes - Welder Owned</title>
+</head>
+
+<body>
+    <!-- Header w/ navbar -->
+    <div class="container-fluid">
+            <div class="row" style="height: 15%; background-color: white;">
+                <div class="col-sm-6" id="headerElement">
+                    <a href="index.html">
+                        <img src="images/StackingDimes.png">
+                    </a>
+                    <div class="mobileShow" style="float: right;">
+                        <a class="toggle" href="#"><img src="images/barNav.svg" width="50px" height="50px" onclick="openNav()"></a>
+                    </div>
+                </div>
+                <div class="col-sm-6" style="margin-top: 5%;">
+                    <img src="images/Twitter-icon.png" alt="Twitter" height="25px" width="30px" style="float:right;">
+                    <a href="https://www.facebook.com/stacking.dimes" target="blank"><img src="images/Facebook-icon.png" alt="Facebook" height="25px" width="15px" style="float:right; margin-right: 2%;"></a>
+                    <a href="https://www.instagram.com/stacking__dimes/" target="blank"><img src="images/Instagram-icon.png" alt="Instagram" height="25px" width="25px" style="float:right; margin-right: 2%;"></a>
+                </div>
+            </div>
+    
+            <div class="row">
+                <ul class="navigation" style="background-color: #0F0F0F; color: white; margin-top: 0%;">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="products.html">Products</a></li>
+                    <li><a class="active" href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li style="float:right;"><a href="#Cart" class="snipcart-checkout">Shopping Cart</a></li>
+                </ul>
+            </div>
+        </div>
+    
+        <div id="mySidenav" class="mobileNav">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <a href="index.html">Home</a>
+            <a href="products.html">Products</a>
+            <a href="about.html">About</a>
+            <a href="contact.html">Contact</a>
+            <a href="#Cart" class="snipcart-checkout">Shopping Cart</a>
+        </div>
+    
+        <script>
+            function openNav() {
+                document.getElementById("mySidenav").style.width = "175px";
+            }
+    
+            /* Set the width of the side navigation to 0 */
+            function closeNav() {
+                document.getElementById("mySidenav").style.width = "0";
+            }
+        </script>
+    
+<!-- Main content section -->
+    <div class="container-fluid" style="background-color: white;">
+        <p style="text-align: center; font-size: 36px;">About Stacking Dimes</p>
+        <div class="row">
+            <p style="margin-left: 20%; margin-right: 20%;">"I started Stacking Dimes for myself because I wanted some cool shirts and stickers. People started asking me for
+                Stacking Dimes gear so now I bring you some of the sickest gear out there. This was a great opportunity to make a
+                couple extra bucks. Now I just love being a larger part of the welding community"</p>
+            <p style="margin-left: 20%;"><b>- Connor Zorn</b></p>
+        </div>
+    </div>
+
+<!-- Footer -->
+    <div class="container-fluid" style="background-color: white; margin-top: 1%;">
+        <div class="row" style="height: 5%;">
+            <div class="col-sm-4" style="margin-top: 1%;"><p>Contact Us: StackingDimes16@gmail.com</p></div>
+            <div class="col-sm-4" style="text-align: center; margin-top: 1%;">Copyright © Stacking Dimes™. 2017</div>
+            <div class="col-sm-4" style="margin-top: 0.5%;">
+                <a href="#facebook" target="blank"><img src="images/Twitter-icon.png" alt="Twitter" height="25px" width="30px" style="float:right;"></a>
+                <a href="https://www.facebook.com/stacking.dimes" target="blank"><img src="images/Facebook-icon.png" alt="Facebook" height="25px" width="15px" style="float:right; margin-right: 2%;"></a>
+                <a href="https://www.instagram.com/stacking__dimes/" target="blank"><img src="images/Instagram-icon.png" alt="Instagram" height="25px" width="25px" style="float:right; margin-right: 2%;"></a>
+            </div>
+        </div>
+    </div>
+
+<!--SCRIPT FOR GOOGLE ANALYTICS-->
+<script>
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+ga('create', 'UA-106131532-1', 'auto');
+ga('send', 'pageview');
+</script>
+
+</body>
+</html>
